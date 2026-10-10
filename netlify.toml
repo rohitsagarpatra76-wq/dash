@@ -1,4 +1,5 @@
 [build]
+  command = "mkdir -p dist && cp index.html real_survey_responses.csv real_survey_responses.json real_survey_responses.tsv dist/"
   publish = "dist"
 
 [[headers]]

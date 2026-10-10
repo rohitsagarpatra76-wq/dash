@@ -1687,6 +1687,7 @@ with open(os.path.join('dist', '_headers'), 'w', encoding='utf-8') as f:
 # Netlify toml
 with open('netlify.toml', 'w', encoding='utf-8') as f:
     f.write("""[build]
+  command = "mkdir -p dist && cp index.html real_survey_responses.csv real_survey_responses.json real_survey_responses.tsv dist/"
   publish = "dist"
 
 [[headers]]
